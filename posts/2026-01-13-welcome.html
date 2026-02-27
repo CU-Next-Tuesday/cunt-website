@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to cunexttuesday.org</title>
+  <meta name="description" content="First post: why this blog is plain HTML/CSS on Cloudflare Pages." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        <a class="title" href="/">cunexttuesday.org</a>
+        <span class="badge">announcement</span>
+      </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="card article">
+      <p class="kicker">Announcement</p>
+      <h1>Welcome to cunexttuesday.org</h1>
+      <p class="byline">2026-01-13 · ~2 min read</p>
+
+      <hr class="sep" />
+
+      <p>
+        This blog is intentionally boring under the hood: plain HTML + CSS.
+        Cloudflare Pages serves it fast, cheaply, and reliably.
+      </p>
+
+      <h2>Why static?</h2>
+      <p>
+        It’s simple, secure, and doesn’t need a database. Adding a post is just
+        adding a new file in <code>/posts/</code> and linking it from <code>/index.html</code>.
+      </p>
+
+      <h2>What’s next</h2>
+      <p>
+        If you later want an editor, tags, search, or comments, you can add those without replatforming.
+      </p>
+
+      <hr class="sep" />
+      <p style="margin:0;"><a href="/">← Back to Home</a></p>
+    </article>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> cunexttuesday.org</span>
+      <span>Static HTML/CSS on Cloudflare Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

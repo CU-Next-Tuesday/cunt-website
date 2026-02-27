@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Backlog — cunexttuesday.org</title>
+  <meta name="description" content="A 12-week, 2-entries/week publishing tracker." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="topbar">
+<nav class="nav">
+<div class="brand">
+<a class="title" href="/">cunexttuesday.org</a>
+<span class="badge">tracker</span>
+</div>
+<div class="menu">
+<a href="/">Home</a>
+<a href="/changed-this-week.html">What Changed</a>
+<a href="/court-outcomes.html">Court Outcomes</a>
+<a href="/didnt-happen.html">Didn’t Happen</a>
+<a href="/ledger-rules.html">Ledger Rules</a>
+<a href="/archive.html">Archive</a>
+<a href="/rss.xml">RSS</a>
+</div>
+</nav>
+</header>
+
+<main class="wrap">
+<article class="card article">
+<p class="kicker">Tracker</p>
+<h1>12-week backlog (2 entries/week)</h1>
+
+<div class="callout">
+<strong>How to use:</strong> Check items as you publish. This page stores your progress in your browser (local only).<br />
+<strong>Rule:</strong> One strong receipts post beats three weak ones.
+</div>
+
+<div id="list"></div>
+
+<hr class="sep" />
+
+<p class="muted">
+Tip: When you finish a week, copy its two links into <a href="/changed-this-week.html">What Changed</a> (auto) and you’re done.
+</p>
+
+<p><a href="/">← Back to Home</a></p>
+</article>
+
+<footer class="footer">
+<span>© <span id="y"></span> cunexttuesday.org</span>
+<span>Backlog</span>
+</footer>
+</main>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+
+const plan = [
+  {week: 1, items: ["Immigration enforcement expansion (ops) — receipts", "Spine Check: Lindsey Graham"]},
+  {week: 2, items: ["DOJ independence: prosecutor removals (structure)", "Spine Check: Ted Cruz"]},
+  {week: 3, items: ["Environment: EPA drops health-benefit math", "Spine Check: Josh Hawley (brand vs record)"]},
+  {week: 4, items: ["Courts: DOJ drops appeal (funding leverage)", "Environment: CWA §401 rulemaking push"]},
+  {week: 5, items: ["Oversight: Inspectors General vacancies / firings", "Spine Check: Marco Rubio (con artist → alignment)"]},
+  {week: 6, items: ["Immigration: TPS termination case file", "Spine Check: Freedom Caucus pattern"]},
+  {week: 7, items: ["Courts roundup: blocked / narrowed / allowed (week)", "Spine Check: Kevin McCarthy walk-back"]},
+  {week: 8, items: ["Rulemaking process: compressed comment windows", "Spine Check: Fox/Dominion (record)"]},
+  {week: 9, items: ["Dropped appeals ledger (pattern)", "Spine Check: Mike Pence (refusal)"]},
+  {week:10, items: ["Environment: enforcement declines / metrics shifts follow-up", "Spine Check: Anonymous concern pattern"]},
+  {week:11, items: ["Year-one map: receipts-only index", "Update an earlier entry with new action"]},
+  {week:12, items: ["Ledger rules refresh + methodology sync", "Corrections + transparency post"]}
+];
+
+const key = "cunexttuesday_backlog_checks_v1";
+const state = JSON.parse(localStorage.getItem(key) || "{}");
+
+function checkboxId(week, idx){ return `w${week}_i${idx}`; }
+
+const container = document.getElementById('list');
+container.innerHTML = plan.map(w => {
+  const rows = w.items.map((t, idx) => {
+    const id = checkboxId(w.week, idx);
+    const checked = state[id] ? "checked" : "";
+    return `<label style="display:flex; gap:10px; align-items:flex-start; margin:10px 0;">
+      <input type="checkbox" data-id="${id}" ${checked} style="margin-top:3px;" />
+      <span><strong>Entry ${idx+1}:</strong> ${t}</span>
+    </label>`;
+  }).join("");
+  return `<div style="padding:14px; border:1px solid var(--border); border-radius:16px; margin:14px 0;">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <strong style="font-family:var(--mono);">Week ${w.week}</strong>
+      <span class="tag">2 entries</span>
+    </div>
+    <div style="margin-top:10px;">${rows}</div>
+  </div>`;
+}).join("");
+
+container.addEventListener('change', (e) => {
+  const el = e.target;
+  if(el && el.dataset && el.dataset.id){
+    state[el.dataset.id] = el.checked;
+    localStorage.setItem(key, JSON.stringify(state));
+  }
+});
+</script>
+
+</body>
+</html>

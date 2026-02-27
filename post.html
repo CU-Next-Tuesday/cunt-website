@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post title — cunexttuesday.org</title>
+  <meta name="description" content="Post description goes here." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        <a class="title" href="/">cunexttuesday.org</a>
+        <span class="badge">post</span>
+      </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="card article">
+      <p class="kicker">Category</p>
+      <h1>Post title</h1>
+      <p class="byline">2026-01-13 · ~2 min read</p>
+
+      <hr class="sep" />
+
+      <p>
+        Write your post here. Keep it simple. It’s just HTML.
+      </p>
+
+      <h2>A section</h2>
+      <p>
+        You can include <code>inline code</code> and code blocks:
+      </p>
+      <pre><code>&lt;div&gt;hello&lt;/div&gt;</code></pre>
+
+      <hr class="sep" />
+      <p style="margin:0;"><a href="/">← Back to Home</a></p>
+    </article>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> cunexttuesday.org</span>
+      <span>Static HTML/CSS on Cloudflare Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

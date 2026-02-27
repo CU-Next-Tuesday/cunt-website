@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — cunexttuesday.org</title>
+  <meta name="description" content="About cunexttuesday.org" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        <a class="title" href="/">cunexttuesday.org</a>
+        <span class="badge">about</span>
+      </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card article">
+      <h1>About</h1>
+      <p class="byline">Static HTML/CSS blog on Cloudflare Pages</p>
+      <hr class="sep" />
+      <p>
+        cunexttuesday.org is a simple site with a simple stack.
+      </p>
+      <p>
+        No database. No logins. Just pages.
+      </p>
+      <hr class="sep" />
+      <p style="margin:0;"><a href="/">← Back to Home</a></p>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> cunexttuesday.org</span>
+      <span>Static HTML/CSS on Cloudflare Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

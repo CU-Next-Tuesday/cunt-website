@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corrections — cunexttuesday.org</title>
+  <meta name="description" content="Corrections log for cunexttuesday.org: transparent changes with dates." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        <a class="title" href="/">cunexttuesday.org</a>
+        <span class="badge">corrections</span>
+      </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/archive.html">Archive</a>
+        <a href="/spine-check.html">Spine Check</a>
+        <a href="/corrections.html">Corrections</a>
+        <a href="/disclaimer.html">Methodology</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+    </nav>
+  </header>
+  <main class="wrap">
+    <article class="card article">
+      <p class="kicker">Corrections</p>
+      <h1>Corrections log</h1>
+      <p class="byline">Transparency beats spin</p>
+
+      <div class="callout">
+        <strong>Policy:</strong> Factual errors get corrected with a dated note. Silent edits are avoided.
+      </div>
+
+      <hr class="sep" />
+      <p style="margin:0; color:var(--muted);">No corrections yet. If you need to add one, edit <code>src/corrections.json</code> and redeploy.</p>
+      <hr class="sep" />
+      <p style="margin:0;"><a href="/">← Back to Home</a></p>
+    </article>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> cunexttuesday.org</span>
+      <span>Corrections</span>
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

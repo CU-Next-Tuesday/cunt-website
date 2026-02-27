@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Receipts template example — cunexttuesday.org</title>
+  <meta name="description" content="Example layout showing quotes, timeline, and sources in the Receipts format." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">
+        <a class="title" href="/">cunexttuesday.org</a>
+        <span class="badge">receipts</span>
+      </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/rss.xml">RSS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <article class="card article">
+      <p class="kicker">Receipts</p>
+      <h1>Example: how a receipts post is structured</h1>
+      <p class="byline">2026-01-13 · ~3 min read · <span class="pill">template</span> <span class="pill">how-to</span></p>
+
+      <div class="callout">
+        <strong>Claim:</strong> “Something happened” (placeholder).<br />
+        <strong>Reality:</strong> Here’s what the source actually says (placeholder).<br />
+        <strong>Bottom line:</strong> Don’t let the story get laundered.
+      </div>
+
+      <hr class="sep" />
+
+      <h2>Key points</h2>
+      <ul class="keypoints">
+        <li>Open with the claim you’re responding to (one sentence).</li>
+        <li>Drop the quote(s) with date + link.</li>
+        <li>Use a timeline when the story spans multiple days.</li>
+      </ul>
+
+      <h2>Receipts</h2>
+      <blockquote class="receipt">
+        <p>
+          “This is where you paste the exact quote.”
+        </p>
+        <div class="qmeta">
+          <span class="tag">Quote</span>
+          <span class="tag">2026-01-13</span>
+          <span class="tag">Speaker</span>
+          <a href="#" rel="noopener" target="_blank">Primary source</a>
+        </div>
+      </blockquote>
+
+      <h2>Timeline</h2>
+      <ul class="timeline">
+        <li>
+          <div class="tmeta">
+            <span class="tag">2026-01-10</span>
+            <span class="tag">Statement</span>
+            <a href="#" rel="noopener" target="_blank">Source</a>
+          </div>
+          <p style="margin:0; color:var(--text);">
+            A short factual description of what happened.
+          </p>
+        </li>
+        <li>
+          <div class="tmeta">
+            <span class="tag">2026-01-12</span>
+            <span class="tag">Action</span>
+            <a href="#" rel="noopener" target="_blank">Source</a>
+          </div>
+          <p style="margin:0; color:var(--text);">
+            What changed — vote, filing, or official action.
+          </p>
+        </li>
+      </ul>
+
+      <h2>Sources</h2>
+      <ol class="sourcelist">
+        <li><a href="#" rel="noopener" target="_blank">Primary source #1</a> — describe it.</li>
+        <li><a href="#" rel="noopener" target="_blank">Primary source #2</a> — describe it.</li>
+      </ol>
+
+      <hr class="sep" />
+      <p style="margin:0;"><a href="/">← Back to Home</a></p>
+    </article>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> cunexttuesday.org</span>
+      <span>Example receipts post</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
