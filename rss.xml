@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <rss version="2.0">
   <channel>
     <title>cunexttuesday.org</title>
     <link>https://cunexttuesday.org/</link>
     <description>Receipts-first: claims vs actions, documented.</description>
     <language>en-us</language>
-    <item>
+    <item><title>U.S. and Israel launch major strikes in Iran (Operation “Epic Fury”)</title><link>https://cunexttuesday.org/posts/2026-02-28-us-israel-strikes-iran-operation-epic-fury.html</link><guid>https://cunexttuesday.org/posts/2026-02-28-us-israel-strikes-iran-operation-epic-fury.html</guid><description>Documenting public reporting and official statements about Feb 28, 2026 U.S.–Israel strikes in Iran and immediate aftermath.</description><pubDate>Sat, 28 Feb 2026 18:00:00 +0000</pubDate></item><item><title>State of the Union 2026: administration priorities and claims (as delivered)</title><link>https://cunexttuesday.org/posts/2026-02-24-state-of-the-union-2026.html</link><guid>https://cunexttuesday.org/posts/2026-02-24-state-of-the-union-2026.html</guid><description>Summary + receipts for President Trump’s 2026 State of the Union address (Feb 24, 2026).</description><pubDate>Tue, 24 Feb 2026 18:00:00 +0000</pubDate></item><item><title>Trade actions: de minimis suspension extended, tariff actions ended, temporary import surcharge imposed</title><link>https://cunexttuesday.org/posts/2026-02-20-trade-actions-de-minimis-import-surcharge.html</link><guid>https://cunexttuesday.org/posts/2026-02-20-trade-actions-de-minimis-import-surcharge.html</guid><description>Feb 20, 2026 actions affecting de minimis treatment, tariffs, and a temporary import surcharge (White House).</description><pubDate>Fri, 20 Feb 2026 18:00:00 +0000</pubDate></item><item><title>Executive actions: Iran tariffs, Russia duties, and an “America First” arms transfer strategy</title><link>https://cunexttuesday.org/posts/2026-02-06-executive-orders-iran-russia-arms.html</link><guid>https://cunexttuesday.org/posts/2026-02-06-executive-orders-iran-russia-arms.html</guid><description>Cluster of Feb 6, 2026 executive orders on Iran-linked tariffs, Russia-linked duties, and U.S. arms transfer policy.</description><pubDate>Fri, 06 Feb 2026 18:00:00 +0000</pubDate></item><item><title>Executive order: “Celebrating American Greatness with American Motor Racing”</title><link>https://cunexttuesday.org/posts/2026-01-30-motor-racing-proclamation.html</link><guid>https://cunexttuesday.org/posts/2026-01-30-motor-racing-proclamation.html</guid><description>White House executive order recognizing American motor racing (Jan 30, 2026).</description><pubDate>Fri, 30 Jan 2026 18:00:00 +0000</pubDate></item><item><title>Executive order: addressing threats by the Government of Cuba</title><link>https://cunexttuesday.org/posts/2026-01-29-executive-order-cuba-threats.html</link><guid>https://cunexttuesday.org/posts/2026-01-29-executive-order-cuba-threats.html</guid><description>White House executive order on Cuba-related national security and economic measures (Jan 29, 2026).</description><pubDate>Thu, 29 Jan 2026 18:00:00 +0000</pubDate></item><item>
       <title>Spine Check: Talking tough, voting soft</title>
       <link>https://cunexttuesday.org/posts/2026-01-22-spine-check-example.html</link>
       <guid>https://cunexttuesday.org/posts/2026-01-22-spine-check-example.html</guid>
@@ -136,7 +136,7 @@
       <link>https://cunexttuesday.org/posts/2026-01-07-kevin-mccarthy-trump-bears-responsibility-walkback.html</link>
       <guid>https://cunexttuesday.org/posts/2026-01-07-kevin-mccarthy-trump-bears-responsibility-walkback.html</guid>
       <pubDate>Wed, 07 Jan 2026 18:00:00 GMT</pubDate>
-      <description>McCarthy said Trump &#x27;bears responsibility&#x27; for Jan 6 — then the party line reasserted itself.</description>
+      <description>McCarthy said Trump 'bears responsibility' for Jan 6 — then the party line reasserted itself.</description>
     </item>
     <item>
       <title>Immigration leverage fight: DOJ drops appeal on tying transportation funds to enforcement cooperation</title>

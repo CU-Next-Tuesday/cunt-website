@@ -1,201 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Receipts: Post title — cunexttuesday.org</title>
-  <meta name="description" content="Receipts-first post: quotes, timeline, and primary sources." />
-  
-  
-  
-  <!-- Optional: "Didn’t Happen" ledger fields (use when a promise/deadline quietly dies)
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Receipts: Post title — cunexttuesday.org</title>
+<meta content="Receipts-first post: quotes, timeline, and primary sources." name="description"/>
+<!-- Optional: "Didn’t Happen" ledger fields (use when a promise/deadline quietly dies)
        Tag the post with: <span class="pill">didnt happen</span> or <span class="pill">dropped promises</span> -->
-  <meta name="promise:claim" content="[What was promised]" />
-  <meta name="promise:promised_by" content="[Person/office]" />
-  <meta name="promise:due_date" content="YYYY-MM-DD" />
-  <meta name="promise:status" content="Missed | Abandoned | Quietly replaced | Delayed | Still pending" />
-
+<meta content="[What was promised]" name="promise:claim"/>
+<meta content="[Person/office]" name="promise:promised_by"/>
+<meta content="YYYY-MM-DD" name="promise:due_date"/>
+<meta content="Missed | Abandoned | Quietly replaced | Delayed | Still pending" name="promise:status"/>
 <!-- Optional: Court outcome tracker fields (only if this post is about litigation / court outcomes)
        If you add tags like <span class="pill">courts</span> or <span class="pill">litigation</span>,
        fill these meta tags so /court-outcomes.html becomes a clean tracker. -->
-  <meta name="court:case" content="[Case name]" />
-  <meta name="court:court" content="[Court / jurisdiction]" />
-  <meta name="court:status" content="Filed | Blocked | Allowed | Narrowed | Stayed | Settled | Dropped | Pending" />
-  <meta name="court:order_date" content="YYYY-MM-DD" />
-
+<meta content="[Case name]" name="court:case"/>
+<meta content="[Court / jurisdiction]" name="court:court"/>
+<meta content="Filed | Blocked | Allowed | Narrowed | Stayed | Settled | Dropped | Pending" name="court:status"/>
+<meta content="YYYY-MM-DD" name="court:order_date"/>
 <!-- Optional: Spine Check ledger fields (only if this post is a Spine Check entry)
        If you add the pill tag: <span class="pill">spine check</span>
        ...and fill these meta tags, your /spine-check.html ledger becomes much sharper. -->
-  <meta name="spine:person" content="[Name]" />
-  <meta name="spine:office" content="[Office]" />
-  <meta name="spine:statement_date" content="YYYY-MM-DD" />
-  <meta name="spine:action_date" content="YYYY-MM-DD" />
-  <meta name="spine:outcome" content="What materially happened" />
-
-<link rel="stylesheet" href="/styles.css" />
-</head>
+<meta content="[Name]" name="spine:person"/>
+<meta content="[Office]" name="spine:office"/>
+<meta content="YYYY-MM-DD" name="spine:statement_date"/>
+<meta content="YYYY-MM-DD" name="spine:action_date"/>
+<meta content="What materially happened" name="spine:outcome"/>
+<link href="/styles.css" rel="stylesheet"/>
+<link href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23111%22/%3E%3Cpath d=%22M18 32h28%22 stroke=%22%23fff%22 stroke-width=%226%22 stroke-linecap=%22round%22/%3E%3Cpath d=%22M22 22h20%22 stroke=%22%23fff%22 stroke-width=%226%22 stroke-linecap=%22round%22 opacity=%220.85%22/%3E%3Cpath d=%22M22 42h20%22 stroke=%22%23fff%22 stroke-width=%226%22 stroke-linecap=%22round%22 opacity=%220.85%22/%3E%3C/svg%3E" rel="icon"/><link href="https://cunexttuesday.org/receipts-template.html" rel="canonical"/><meta content="cunexttuesday.org" property="og:site_name"/><meta content="Receipts: Post title" property="og:title"/><meta content="Receipts-first post: quotes, timeline, and primary sources." property="og:description"/><meta content="https://cunexttuesday.org/receipts-template.html" property="og:url"/><meta content="website" property="og:type"/><meta content="summary" name="twitter:card"/><meta content="Receipts: Post title" name="twitter:title"/><meta content="Receipts-first post: quotes, timeline, and primary sources." name="twitter:description"/></head>
 <body>
-  <header class="topbar">
-    <nav class="nav">
-      <div class="brand">
-        <a class="title" href="/">cunexttuesday.org</a>
-        <span class="badge">receipts</span>
+<header class="topbar">
+<nav class="nav">
+<div class="brand">
+<a class="title" href="/">cunexttuesday.org</a>
+<span class="badge">receipts</span>
+</div>
+<div class="menu">
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/rss.xml">RSS</a>
+</div>
+</nav>
+</header>
+<main class="wrap">
+<article class="card article">
+<p class="kicker">Receipts</p>
+<h1>Post title</h1>
+<p class="byline">YYYY-MM-DD · ~X min read · <span class="pill">topic tag</span> <span class="pill">spine check</span></p>
+<div class="callout">
+<strong>Claim:</strong> Put the claim here in one sentence.<br/>
+<strong>Reality:</strong> Put the verifiable correction here in one sentence.<br/>
+<strong>Bottom line:</strong> What the audience should remember.
       </div>
-      <div class="menu">
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/rss.xml">RSS</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="wrap">
-    <article class="card article">
-      <p class="kicker">Receipts</p>
-      <h1>Post title</h1>
-      <p class="byline">YYYY-MM-DD · ~X min read · <span class="pill">topic tag</span> <span class="pill">spine check</span></p>
-
-      <div class="callout">
-        <strong>Claim:</strong> Put the claim here in one sentence.<br />
-        <strong>Reality:</strong> Put the verifiable correction here in one sentence.<br />
-        <strong>Bottom line:</strong> What the audience should remember.
-      </div>
-
-      
-      
-      
-      <h2>Didn’t Happen Starter (optional)</h2>
-      <div class="notice">
+<h2>Didn’t Happen Starter (optional)</h2>
+<div class="notice">
         If this post documents a promise/deadline that quietly died, add the pill tag <span class="pill">didnt happen</span>
         and fill the promise meta tags in the <code>&lt;head&gt;</code>. Then paste a filled-in summary here:
-        <br /><br />
-        <strong>Claim:</strong> [What was promised]<br />
-        <strong>Promised by:</strong> [Person/office]<br />
-        <strong>Due date:</strong> YYYY-MM-DD<br />
-        <strong>Status:</strong> Missed | Abandoned | Quietly replaced | Delayed | Still pending
+        <br/><br/>
+<strong>Claim:</strong> [What was promised]<br/>
+<strong>Promised by:</strong> [Person/office]<br/>
+<strong>Due date:</strong> YYYY-MM-DD<br/>
+<strong>Status:</strong> Missed | Abandoned | Quietly replaced | Delayed | Still pending
       </div>
-
-      <hr class="sep" />
+<hr class="sep"/>
 <h2>Court Outcome Starter (optional)</h2>
-      <div class="notice">
+<div class="notice">
         If this post is tied to a court case or ruling, add a tag like <span class="pill">courts</span> and fill the meta tags in the <code>&lt;head&gt;</code>.
         Then paste a filled-in summary here:
-        <br /><br />
-        <strong>Case:</strong> [Case name]<br />
-        <strong>Court:</strong> [Court / jurisdiction]<br />
-        <strong>Status:</strong> Filed | Blocked | Allowed | Narrowed | Stayed | Settled | Dropped | Pending<br />
-        <strong>Order date:</strong> YYYY-MM-DD
+        <br/><br/>
+<strong>Case:</strong> [Case name]<br/>
+<strong>Court:</strong> [Court / jurisdiction]<br/>
+<strong>Status:</strong> Filed | Blocked | Allowed | Narrowed | Stayed | Settled | Dropped | Pending<br/>
+<strong>Order date:</strong> YYYY-MM-DD
       </div>
-
-      <hr class="sep" />
+<hr class="sep"/>
 <h2>Spine Check Starter (optional)</h2>
-      <div class="notice">
+<div class="notice">
         If this post is a <strong>Spine Check</strong> entry, add the pill tag <span class="pill">spine check</span>
         in your byline and fill the meta tags in the <code>&lt;head&gt;</code>.
         Then paste this filled-in block (so the post itself reads clean, not just the index):
-        <br /><br />
-        <strong>Person:</strong> [Name] — [Office]<br />
-        <strong>Statement date:</strong> YYYY-MM-DD<br />
-        <strong>Action date:</strong> YYYY-MM-DD<br />
-        <strong>Outcome:</strong> What materially happened
+        <br/><br/>
+<strong>Person:</strong> [Name] — [Office]<br/>
+<strong>Statement date:</strong> YYYY-MM-DD<br/>
+<strong>Action date:</strong> YYYY-MM-DD<br/>
+<strong>Outcome:</strong> What materially happened
       </div>
-
-      <hr class="sep" />
-<hr class="sep" />
-
-      <h2>Key points</h2>
-      <ul class="keypoints">
-        <li>What was said (quote + date).</li>
-        <li>What happened (vote, filing, transcript, outcome).</li>
-        <li>What changed (walk-back, “context,” deletion, denial).</li>
-      </ul>
-
-      <h2>Receipts</h2>
-
-      <!-- Receipt #1 -->
-      <blockquote class="receipt">
-        <p>
+<hr class="sep"/>
+<hr class="sep"/>
+<h2>Key points</h2>
+<ul class="keypoints">
+<li>What was said (quote + date).</li>
+<li>What happened (vote, filing, transcript, outcome).</li>
+<li>What changed (walk-back, “context,” deletion, denial).</li>
+</ul>
+<h2>Receipts</h2>
+<!-- Receipt #1 -->
+<blockquote class="receipt">
+<p>
           “Paste the exact quote here. Keep it verbatim. Don’t embellish.”
         </p>
-        <div class="qmeta">
-          <span class="tag">Quote</span>
-          <span class="tag">YYYY-MM-DD</span>
-          <span class="tag">Speaker / account</span>
-          <a href="https://example.com" rel="noopener" target="_blank">Primary source</a>
-        </div>
-      </blockquote>
-
-      <!-- Receipt #2 -->
-      <blockquote class="receipt">
-        <p>
+<div class="qmeta">
+<span class="tag">Quote</span>
+<span class="tag">YYYY-MM-DD</span>
+<span class="tag">Speaker / account</span>
+<a href="https://example.com" rel="noopener" target="_blank">Primary source</a>
+</div>
+</blockquote>
+<!-- Receipt #2 -->
+<blockquote class="receipt">
+<p>
           “Second quote or transcript excerpt.”
         </p>
-        <div class="qmeta">
-          <span class="tag">Transcript</span>
-          <span class="tag">YYYY-MM-DD</span>
-          <span class="tag">Hearing / outlet</span>
-          <a href="https://example.com" rel="noopener" target="_blank">C‑SPAN / document</a>
-        </div>
-      </blockquote>
-
-      <h2>Timeline</h2>
-      <ul class="timeline">
-        <li>
-          <div class="tmeta">
-            <span class="tag">YYYY-MM-DD</span>
-            <span class="tag">Event</span>
-            <a href="https://example.com" rel="noopener" target="_blank">Source</a>
-          </div>
-          <p style="margin:0; color:var(--text);">
+<div class="qmeta">
+<span class="tag">Transcript</span>
+<span class="tag">YYYY-MM-DD</span>
+<span class="tag">Hearing / outlet</span>
+<a href="https://example.com" rel="noopener" target="_blank">C‑SPAN / document</a>
+</div>
+</blockquote>
+<h2>Timeline</h2>
+<ul class="timeline">
+<li>
+<div class="tmeta">
+<span class="tag">YYYY-MM-DD</span>
+<span class="tag">Event</span>
+<a href="https://example.com" rel="noopener" target="_blank">Source</a>
+</div>
+<p style="margin:0; color:var(--text);">
             One or two sentences describing what happened. Keep it specific.
           </p>
-        </li>
-
-        <li>
-          <div class="tmeta">
-            <span class="tag">YYYY-MM-DD</span>
-            <span class="tag">Vote / filing</span>
-            <a href="https://example.com" rel="noopener" target="_blank">Roll call / docket</a>
-          </div>
-          <p style="margin:0; color:var(--text);">
+</li>
+<li>
+<div class="tmeta">
+<span class="tag">YYYY-MM-DD</span>
+<span class="tag">Vote / filing</span>
+<a href="https://example.com" rel="noopener" target="_blank">Roll call / docket</a>
+</div>
+<p style="margin:0; color:var(--text);">
             Document the action, not the vibes. If there’s a number (bill number, case number), include it.
           </p>
-        </li>
-
-        <li>
-          <div class="tmeta">
-            <span class="tag">YYYY-MM-DD</span>
-            <span class="tag">Backpedal</span>
-            <a href="https://example.com" rel="noopener" target="_blank">Video / statement</a>
-          </div>
-          <p style="margin:0; color:var(--text);">
+</li>
+<li>
+<div class="tmeta">
+<span class="tag">YYYY-MM-DD</span>
+<span class="tag">Backpedal</span>
+<a href="https://example.com" rel="noopener" target="_blank">Video / statement</a>
+</div>
+<p style="margin:0; color:var(--text);">
             Show the pivot. Quote it if possible. Link it if it’s real.
           </p>
-        </li>
-      </ul>
-
-      <h2>Sources</h2>
-      <p style="margin:0; color:var(--muted);">
+</li>
+</ul>
+<h2>Sources</h2>
+<p style="margin:0; color:var(--muted);">
         Primary sources first. Secondary coverage only if it adds context (and label it as such).
       </p>
-      <ol class="sourcelist">
-        <li><a href="https://example.com" rel="noopener" target="_blank">Primary source link</a> — what it contains (transcript / vote / filing / video).</li>
-        <li><a href="https://example.com" rel="noopener" target="_blank">Second primary source</a> — what it contains.</li>
-        <li><a href="https://example.com" rel="noopener" target="_blank">Secondary coverage (optional)</a> — why it’s included.</li>
-      </ol>
-
-      <hr class="sep" />
-
-      <p style="margin:0;"><a href="/">← Back to Home</a></p>
-    </article>
-
-    <footer class="footer">
-      <span>© <span id="y"></span> cunexttuesday.org</span>
-      <span>Receipts-first template</span>
-    </footer>
-  </main>
-
-  <script>
+<ol class="sourcelist">
+<li><a href="https://example.com" rel="noopener" target="_blank">Primary source link</a> — what it contains (transcript / vote / filing / video).</li>
+<li><a href="https://example.com" rel="noopener" target="_blank">Second primary source</a> — what it contains.</li>
+<li><a href="https://example.com" rel="noopener" target="_blank">Secondary coverage (optional)</a> — why it’s included.</li>
+</ol>
+<hr class="sep"/>
+<p style="margin:0;"><a href="/">← Back to Home</a></p>
+</article>
+<footer class="footer">
+<span>© <span id="y"></span> cunexttuesday.org</span>
+<span>Receipts-first template</span>
+</footer>
+</main>
+<script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
